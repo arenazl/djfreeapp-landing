@@ -417,14 +417,12 @@
         <span class="font-bold text-base md:text-lg text-white">DJ Free App</span>
       </a>
 
-      <!-- Desktop nav -->
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="/features"   class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Features</a>
-        <a href="/como-funciona"       class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Cómo funciona</a>
-        <a href="/fuentes"    class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Fuentes</a>
-        <a href="/generos"    class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Géneros</a>
-        <a href="/precios"    class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Precios</a>
-        <a href="/faq"        class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">FAQ</a>
+      <!-- Desktop nav — scroll-spy via data-spy="features|como|precios|faq" matches in-page sections -->
+      <nav class="hidden lg:flex items-center gap-1" id="topNav">
+        <a href="/features"      data-spy="features" class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Features</a>
+        <a href="/como-funciona" data-spy="como"     class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Cómo funciona</a>
+        <a href="/precios"       data-spy="precios"  class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Precios</a>
+        <a href="/faq"           data-spy="faq"      class="nav-link px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">FAQ</a>
       </nav>
 
       <div class="flex items-center gap-2 md:gap-3">
@@ -461,14 +459,6 @@
           <a href="/como-funciona" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
             <i class="fas fa-route w-6 text-purple-400"></i>
             <span class="font-medium text-gray-200">Cómo funciona</span>
-          </a>
-          <a href="/fuentes" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
-            <i class="fas fa-database w-6 text-pink-400"></i>
-            <span class="font-medium text-gray-200">Fuentes</span>
-          </a>
-          <a href="/generos" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
-            <i class="fas fa-music w-6 text-cyan-400"></i>
-            <span class="font-medium text-gray-200">Géneros</span>
           </a>
           <a href="/precios" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
             <i class="fas fa-tags w-6 text-green-400"></i>
@@ -642,6 +632,11 @@
           </div>
 
         </div>
+        <div class="text-center mt-10">
+          <a href="/features" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-medium">
+            Ver todas las features <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -678,6 +673,11 @@
             <h3 class="text-lg font-semibold mb-2">Armá el set</h3>
             <p class="text-sm text-gray-400">Drag &amp; drop al Set Builder, ordenalos, exportalos a tu carpeta de Rekordbox / Serato / Engine DJ. Tocar.</p>
           </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="/como-funciona" class="inline-flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 font-medium">
+            Ver el flujo completo paso a paso <i class="fas fa-arrow-right text-xs"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -851,6 +851,11 @@
           </div>
 
         </div>
+        <div class="text-center mt-10">
+          <a href="/precios" class="inline-flex items-center gap-2 text-sm text-green-400 hover:text-green-300 font-medium">
+            Ver comparación detallada Free vs Pro <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -914,6 +919,11 @@
             </summary>
             <p class="mt-3 text-sm text-gray-400 leading-relaxed">Sí. La suscripción Pro se gestiona por Mercado Pago. Cancelás en cualquier momento desde el panel de tu cuenta o desde Mercado Pago directamente.</p>
           </details>
+        </div>
+        <div class="text-center mt-10">
+          <a href="/faq" class="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 font-medium">
+            Ver todas las preguntas frecuentes <i class="fas fa-arrow-right text-xs"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -1018,27 +1028,7 @@
   </nav>
 
   <!-- ─────────── JS ─────────── -->
-  <script>
-    // Mobile menu
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    function openMobileMenu()  { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
-    function closeMobileMenu() { mobileMenu.classList.add('hidden');    document.body.style.overflow = ''; }
-    mobileMenuBtn.addEventListener('click', openMobileMenu);
-
-    // Top bar shadow on scroll
-    const topBar = document.getElementById('topBar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 30) topBar.classList.add('scrolled');
-      else                     topBar.classList.remove('scrolled');
-    });
-
-    // Fade-in on scroll via IntersectionObserver
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
-    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-  </script>
+  <script src="js/landing.js" defer></script>
 
 </body>
 </html>
