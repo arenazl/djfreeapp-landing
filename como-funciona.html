@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo funciona — DJ Free App | De la chart a tu USB en 3 pasos</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#3b82f6" />
+
+  <meta name="description" content="Cómo funciona DJ Free App: 3 pasos para pasar de descubrir un tema en Beatport o Spotify, a tenerlo descargado, organizado en tu biblioteca por género y armado en un set listo para Rekordbox o Serato." />
+  <meta name="keywords" content="como descargar musica dj, dj software pasos, descargar de beatport, descargar de spotify, set builder dj, exportar a rekordbox, exportar a serato" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://djfreeapp.ar/como-funciona" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://djfreeapp.ar/como-funciona" />
+  <meta property="og:title" content="Cómo funciona — DJ Free App" />
+  <meta property="og:description" content="De la chart al set armado en 3 pasos. Discover, descargar, exportar." />
+  <meta property="og:image" content="https://djfreeapp.ar/images/og-image.jpg" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="DJ Free App" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://djfreeapp.ar/" },
+      { "@type": "ListItem", "position": 2, "name": "Cómo funciona", "item": "https://djfreeapp.ar/como-funciona" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo usar DJ Free App",
+    "description": "Pasos para descubrir, descargar y armar un set de DJ con DJ Free App.",
+    "totalTime": "PT5M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Elegí la chart",
+        "text": "Abrí Discover y seleccioná una chart: Beatport Top 100 por género (Tech House, Melodic Techno, Trance...), Spotify Top 50 por país, o una playlist de un label que sigas.",
+        "url": "https://djfreeapp.ar/como-funciona#paso-1"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Dale play y descargá",
+        "text": "Click sobre cualquier tema para preview HQ instantáneo. Click derecho → Descargar. El agente local trae el archivo con la mejor calidad disponible (FLAC > 320 kbps > 256 kbps).",
+        "url": "https://djfreeapp.ar/como-funciona#paso-2"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Armá el set y exportá",
+        "text": "Arrastrá tracks desde la biblioteca o desde Sugerencias al Set Builder. Ordenalos por BPM, key o manual. Exportá la carpeta numerada a tu disco para abrirla directo en Rekordbox, Serato o Engine DJ.",
+        "url": "https://djfreeapp.ar/como-funciona#paso-3"
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com/3.3.7"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+</head>
+<body>
+
+  <header id="topBar" class="top-bar fixed top-0 left-0 right-0 z-50 px-3 md:px-6 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2"><img src="images/logo.png" class="h-8" alt=""/><span class="font-bold text-base md:text-lg text-white">DJ Free App</span></a>
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="/features"      class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Features</a>
+        <a href="/como-funciona" class="px-3 py-2 text-sm font-medium text-white bg-white/5 rounded-lg">Cómo funciona</a>
+        <a href="/precios"       class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Precios</a>
+        <a href="/faq"           class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-2 md:gap-3">
+        <a href="https://app.djfreeapp.ar" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-sm py-2 px-4"><i class="fas fa-play"></i><span>Empezar gratis</span></a>
+        <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5" aria-label="Abrir menú"><i class="fas fa-bars text-xl text-white"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeMobileMenu()"></div>
+    <div class="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-[var(--dj-bg-panel)] border-l border-[var(--dj-border)] shadow-2xl">
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-8">
+          <div class="flex items-center gap-3"><img src="images/logo.png" class="h-9" alt=""/><span class="font-bold text-lg text-white">DJ Free App</span></div>
+          <button onclick="closeMobileMenu()" class="p-2 rounded-lg hover:bg-white/5"><i class="fas fa-times text-xl text-gray-400"></i></button>
+        </div>
+        <nav class="space-y-1">
+          <a href="/" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-home w-6 text-gray-400"></i><span class="font-medium text-gray-200">Inicio</span></a>
+          <a href="/features"      class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-bolt w-6 text-blue-400"></i><span class="font-medium text-gray-200">Features</span></a>
+          <a href="/como-funciona" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5"><i class="fas fa-route w-6 text-purple-400"></i><span class="font-medium text-white">Cómo funciona</span></a>
+          <a href="/precios"       class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-tags w-6 text-green-400"></i><span class="font-medium text-gray-200">Precios</span></a>
+          <a href="/faq"           class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-circle-question w-6 text-amber-400"></i><span class="font-medium text-gray-200">FAQ</span></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <main class="pt-24 pb-20 md:pb-12">
+
+    <nav aria-label="Breadcrumb" class="px-4 md:px-6 mb-8">
+      <ol class="max-w-6xl mx-auto flex items-center gap-2 text-xs text-gray-500">
+        <li><a href="/" class="hover:text-white">Inicio</a></li>
+        <li><i class="fas fa-chevron-right text-[10px]"></i></li>
+        <li class="text-gray-300">Cómo funciona</li>
+      </ol>
+    </nav>
+
+    <section class="px-4 md:px-6">
+      <div class="max-w-5xl mx-auto text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400 mb-4">
+          <i class="fas fa-route"></i> CÓMO FUNCIONA
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">De la chart al USB <span class="grad-text">en 3 pasos</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">El flujo completo que reemplaza Beatport + Pulselocker + tu carpeta caótica de Descargas.</p>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-6 py-8">
+      <div class="max-w-4xl mx-auto space-y-8">
+
+        <article id="paso-1" class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-2xl font-bold text-white" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">1</div>
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold mb-3">Elegí la chart</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Entrás a la app y vas a la pestaña <strong class="text-white">Discover</strong>. Tres mundos disponibles:</p>
+              <ul class="space-y-2 text-sm text-gray-400 mb-3">
+                <li class="flex gap-2"><i class="fas fa-circle text-[6px] text-blue-400 mt-2 flex-shrink-0"></i><span><strong class="text-white">EDM</strong>: Beatport Top 100 por género (Tech House, Melodic Techno, Trance, Progressive...), Beatport Hype 100, charts de labels.</span></li>
+                <li class="flex gap-2"><i class="fas fa-circle text-[6px] text-pink-400 mt-2 flex-shrink-0"></i><span><strong class="text-white">LATIN</strong>: Reggaeton, Cumbia, Dembow, Salsa, Club hits LATAM. Charts oficiales de Spotify.</span></li>
+                <li class="flex gap-2"><i class="fas fa-circle text-[6px] text-purple-400 mt-2 flex-shrink-0"></i><span><strong class="text-white">POP</strong>: Top 50 Global, Top 50 por país (AR, MX, ES, CL, CO), Indie, Hip Hop, R&amp;B.</span></li>
+              </ul>
+              <p class="text-gray-400 leading-relaxed">Filtros laterales: género, año, BPM, key. Los géneros que más usás se reordenan automáticamente.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="paso-2" class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-2xl font-bold text-white" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">2</div>
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold mb-3">Dale play y bajá</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Click sobre cualquier tema → preview en alta calidad <strong class="text-white">instantáneo</strong>. Para EDM viene del sample oficial de Beatport. Para POP / LATIN se conecta a YouTube Music — track completo, HQ, sin clips de 30 segundos.</p>
+              <p class="text-gray-400 leading-relaxed mb-3"><strong class="text-white">Click derecho</strong> sobre el tema te abre el menú: Ver álbum, Ver radio (similares), Preview de 60s/90s/120s, Compartir, <strong class="text-blue-300">Descargar</strong>.</p>
+              <p class="text-gray-400 leading-relaxed">Al descargar, la app pregunta a la red SoulSeek por el archivo, ranqueando por calidad (FLAC primero, después 320 kbps), pondera sources con buena reputación, y arranca la transferencia <strong class="text-white">directo a tu PC</strong> vía el agente local (sin pasar por la nube). Si una variante falla, prueba la siguiente automáticamente.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="paso-3" class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-2xl font-bold text-white" style="background: linear-gradient(135deg, #ec4899, #f59e0b);">3</div>
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold mb-3">Armá el set</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">El tema cae en tu <strong class="text-white">Biblioteca</strong>, en una subcarpeta por género (<code class="text-blue-300 bg-blue-500/10 px-1 rounded">groove-new/Tech House/</code>). Detección de duplicados automática.</p>
+              <p class="text-gray-400 leading-relaxed mb-3">En la pestaña <strong class="text-white">Set Builder</strong> arrastrás temas desde Biblioteca o desde Sugerencias (recomendaciones automáticas según el set en curso). Ordenamiento por BPM, key, energy o manual.</p>
+              <p class="text-gray-400 leading-relaxed">Click en <strong class="text-blue-300">Exportar</strong> → elegís carpeta destino → DJ Free App copia los temas <strong class="text-white">numerados</strong> (01_, 02_, ...) para mantener el orden. Abrís esa carpeta en Rekordbox / Serato / Engine DJ y ya está — tocás.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="px-4 md:px-6 py-16">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-8">¿Y desde mobile?</h2>
+        <div class="feature-card">
+          <p class="text-gray-300 leading-relaxed mb-3">DJ Free App es una PWA (Progressive Web App) — instalable en Android, iOS, Windows y macOS como app nativa, sin pasar por las stores. Desde el celular podés:</p>
+          <div class="grid md:grid-cols-2 gap-3 mt-4">
+            <div class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-sm text-gray-300">Explorar charts y descubrir música nueva mientras viajás.</span></div>
+            <div class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-sm text-gray-300">Preview en HQ con el reproductor en el footer.</span></div>
+            <div class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-sm text-gray-300">Marcar favoritos y agregar a "pendientes" para bajar después.</span></div>
+            <div class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-sm text-gray-300">Editar tu set armado y compartir tracks por WhatsApp.</span></div>
+          </div>
+          <p class="text-gray-400 text-sm mt-4">Las descargas conviene hacerlas desde tu PC porque necesitan el agente local. Los pendientes que dejes en el celular se bajan solos cuando volvés a tu compu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-6 py-16">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl md:text-4xl font-bold mb-4">Listo para probarlo</h2>
+        <a href="https://app.djfreeapp.ar" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-base px-7 py-3.5"><i class="fas fa-play"></i><span>Empezar ahora — gratis</span></a>
+        <p class="mt-8 text-sm text-gray-500">¿Querés ver todo lo que hace? <a href="/features" class="text-blue-400 hover:text-blue-300 underline">Lista completa de features →</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[var(--dj-border)] px-4 md:px-6 py-10 mb-20 md:mb-0">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2 mb-3"><img src="images/logo.png" class="h-8" alt=""/><span class="font-bold text-white">DJ Free App</span></div>
+        <p class="text-gray-500 text-xs">Herramienta gratuita para DJs.</p>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Producto</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="/features"      class="hover:text-white">Features</a></li>
+          <li><a href="/como-funciona" class="hover:text-white">Cómo funciona</a></li>
+          <li><a href="/precios"       class="hover:text-white">Precios</a></li>
+          <li><a href="/faq"           class="hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Empezar</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="https://app.djfreeapp.ar" target="_blank" rel="noopener" class="hover:text-white">Abrir la app</a></li>
+          <li><a href="https://djfreeapp.ar/GrooveSyncAgent.exe" class="hover:text-white">Agente Windows</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Comunidad</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="https://github.com/arenazl/slsk-ui" target="_blank" rel="noopener" class="hover:text-white">GitHub</a></li>
+          <li><a href="mailto:arenazl@gmail.com" class="hover:text-white">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[var(--dj-border)] text-xs text-gray-600 text-center">© 2026 DJ Free App.</div>
+  </footer>
+
+  <nav class="mobile-bottom-nav md:hidden">
+    <div class="flex justify-around items-center py-2 px-2">
+      <a href="/" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-home text-sm text-gray-400"></i></div><span class="text-[10px] text-gray-500">Inicio</span></a>
+      <a href="/features" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-bolt text-sm text-blue-400"></i></div><span class="text-[10px] text-gray-400">Features</span></a>
+      <a href="https://app.djfreeapp.ar" target="_blank" rel="noopener" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-10 h-10 rounded-full flex items-center justify-center -mt-3" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899); box-shadow: 0 6px 20px rgba(139,92,246,0.5);"><i class="fas fa-play text-white"></i></div><span class="text-[10px] text-white font-semibold">Abrir</span></a>
+      <a href="/precios" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-tags text-sm text-green-400"></i></div><span class="text-[10px] text-gray-400">Precios</span></a>
+      <a href="/faq" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-circle-question text-sm text-amber-400"></i></div><span class="text-[10px] text-gray-400">FAQ</span></a>
+    </div>
+  </nav>
+
+  <script src="js/landing.js" defer></script>
+</body>
+</html>
