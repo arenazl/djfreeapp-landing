@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — DJ Free App | Discover, Descarga, Set Builder, Mix Editor</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#3b82f6" />
+
+  <meta name="description" content="Features de DJ Free App: Discover en vivo con Beatport y Spotify, descarga 1-click vía SoulSeek, biblioteca por género, Set Builder con drag & drop, Mix Editor con timeline y cue points, preview HQ vía YouTube, PWA instalable, compartir tracks y más." />
+  <meta name="keywords" content="dj features, app dj, beatport integrado, spotify dj, soulseek descargas, set builder dj, mix editor, biblioteca dj, preview alta calidad, pwa dj" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://djfreeapp.ar/features" />
+  <link rel="alternate" hreflang="es-ar" href="https://djfreeapp.ar/features" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://djfreeapp.ar/features" />
+  <meta property="og:title" content="Features — DJ Free App" />
+  <meta property="og:description" content="Discover, Descarga, Biblioteca, Set Builder, Mix Editor: todo lo que hace DJ Free App, gratis y en una sola pestaña." />
+  <meta property="og:image" content="https://djfreeapp.ar/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="DJ Free App" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Features — DJ Free App" />
+  <meta name="twitter:description" content="Discover, Descarga, Biblioteca, Set Builder, Mix Editor. Todo gratis." />
+  <meta name="twitter:image" content="https://djfreeapp.ar/images/og-image.jpg" />
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://djfreeapp.ar/" },
+      { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://djfreeapp.ar/features" }
+    ]
+  }
+  </script>
+  <!-- ItemList of features -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Features de DJ Free App",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Discover en vivo (Beatport + Spotify)" },
+      { "@type": "ListItem", "position": 2, "name": "Descarga 1-click vía SoulSeek" },
+      { "@type": "ListItem", "position": 3, "name": "Biblioteca organizada por género" },
+      { "@type": "ListItem", "position": 4, "name": "Set Builder con drag & drop" },
+      { "@type": "ListItem", "position": 5, "name": "Mix Editor con timeline y cue points" },
+      { "@type": "ListItem", "position": 6, "name": "Preview HQ vía YouTube Music" },
+      { "@type": "ListItem", "position": 7, "name": "PWA instalable en celular y desktop" },
+      { "@type": "ListItem", "position": 8, "name": "Compartir tracks con link público" },
+      { "@type": "ListItem", "position": 9, "name": "Tema claro / oscuro con 5 colores de acento" }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com/3.3.7"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+</head>
+
+<body>
+
+  <header id="topBar" class="top-bar fixed top-0 left-0 right-0 z-50 px-3 md:px-6 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="images/logo.png" alt="DJ Free App" class="h-8 w-auto" />
+        <span class="font-bold text-base md:text-lg text-white">DJ Free App</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="/features"      class="px-3 py-2 text-sm font-medium text-white bg-white/5 rounded-lg">Features</a>
+        <a href="/como-funciona" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Cómo funciona</a>
+        <a href="/precios"       class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Precios</a>
+        <a href="/faq"           class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-2 md:gap-3">
+        <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-sm py-2 px-4">
+          <i class="fas fa-play"></i><span>Empezar gratis</span>
+        </a>
+        <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors" aria-label="Abrir menú">
+          <i class="fas fa-bars text-xl text-white"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeMobileMenu()"></div>
+    <div class="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-[var(--dj-bg-panel)] border-l border-[var(--dj-border)] shadow-2xl">
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-8">
+          <div class="flex items-center gap-3">
+            <img src="images/logo.png" class="h-9 w-auto" alt="" /><span class="font-bold text-lg text-white">DJ Free App</span>
+          </div>
+          <button onclick="closeMobileMenu()" class="p-2 rounded-lg hover:bg-white/5"><i class="fas fa-times text-xl text-gray-400"></i></button>
+        </div>
+        <nav class="space-y-1">
+          <a href="/" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-home w-6 text-gray-400"></i><span class="font-medium text-gray-200">Inicio</span></a>
+          <a href="/features"      class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5"><i class="fas fa-bolt w-6 text-blue-400"></i><span class="font-medium text-white">Features</span></a>
+          <a href="/como-funciona" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-route w-6 text-purple-400"></i><span class="font-medium text-gray-200">Cómo funciona</span></a>
+          <a href="/precios"       class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-tags w-6 text-green-400"></i><span class="font-medium text-gray-200">Precios</span></a>
+          <a href="/faq"           class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5"><i class="fas fa-circle-question w-6 text-amber-400"></i><span class="font-medium text-gray-200">FAQ</span></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <main class="pt-24 pb-20 md:pb-12 overflow-x-hidden">
+
+    <!-- Breadcrumb visible -->
+    <nav aria-label="Breadcrumb" class="px-4 md:px-6 mb-8">
+      <ol class="max-w-6xl mx-auto flex items-center gap-2 text-xs text-gray-500">
+        <li><a href="/" class="hover:text-white">Inicio</a></li>
+        <li><i class="fas fa-chevron-right text-[10px]"></i></li>
+        <li class="text-gray-300">Features</li>
+      </ol>
+    </nav>
+
+    <section class="px-4 md:px-6">
+      <div class="max-w-5xl mx-auto text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400 mb-4">
+          <i class="fas fa-bolt"></i> FEATURES
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Todo lo que hace <span class="grad-text">DJ Free App</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">Desde encontrar el tema en una chart hasta tener tu set ordenado para Rekordbox o Serato. Las 9 features que te ahorran horas por semana.</p>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-6 py-12">
+      <div class="max-w-5xl mx-auto space-y-6">
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);">
+              <i class="fas fa-compass text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Discover en vivo — Beatport + Spotify integrados</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Charts en tiempo real. Beatport Top 100 por género (Tech House, Melodic Techno, Trance, Progressive, Drum &amp; Bass, Bass House, Future House, Afro House, Deep House, House, Big Room, Hardstyle, Electronica, Indie Dance, Minimal). Spotify Top 50 Global, por país (Argentina, México, España, Chile, Colombia) y charts de Reggaeton, Cumbia, Salsa.</p>
+              <p class="text-gray-400 leading-relaxed">Filtros por BPM, key, label, fecha de release. Click derecho sobre cualquier tema → ver álbum completo, ver radio (similares), agregar a pendientes, compartir.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+              <i class="fas fa-download text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Descarga 1-click vía SoulSeek</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Click en cualquier tema → DJ Free App busca en la red SoulSeek priorizando calidad: FLAC primero, luego 320 kbps, luego 256 kbps. Intenta múltiples sources hasta encontrar uno disponible. Si todas las variantes fallan, queda en "Pendientes" y reintenta automáticamente más tarde.</p>
+              <p class="text-gray-400 leading-relaxed">El motor de descarga corre en un <strong class="text-white">agente local</strong> (.exe en Windows, script en Mac/Linux) — el backend solo orquesta, los archivos van directo a tu PC sin pasar por la nube.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #06b6d4, #10b981);">
+              <i class="fas fa-folder-tree text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Biblioteca organizada por género</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Cada tema cae automáticamente en una subcarpeta por género: <code class="text-blue-300 bg-blue-500/10 px-1 rounded">groove-new/Tech House/</code>, <code class="text-blue-300 bg-blue-500/10 px-1 rounded">groove-new/Reggaeton/</code>, etc. Detección de duplicados, búsqueda full-text, filtros por género, BPM y favoritos. Reproducción inline con waveform.</p>
+              <p class="text-gray-400 leading-relaxed">Cambiá el género de un tema desde el menú contextual y se mueve solo entre carpetas. Cero gestión manual de archivos.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
+              <i class="fas fa-bars-staggered text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Set Builder con drag &amp; drop</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Arrastrá temas desde la biblioteca o desde "Sugerencias" (recomendaciones automáticas según el set actual). Ordenamiento por BPM, key, energy o manual. Pestañas para alternar entre Sugerencias y Biblioteca completa, con búsqueda y filtros.</p>
+              <p class="text-gray-400 leading-relaxed">Exportá el set a una carpeta de tu PC (numerada para mantener el orden) o como ZIP listo para mandar al WeTransfer del DJ que te reemplaza.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">
+              <i class="fas fa-wave-square text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Mix Editor con timeline y cue points</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Timeline visual del set completo con zoom (Ctrl + rueda del mouse para acercar/alejar). Marcadores de cue, transiciones, intro/outro. Drag para reordenar tracks. Visualización de waveforms para entender la energía del set antes de tocarlo.</p>
+              <p class="text-gray-400 leading-relaxed">El set queda guardado en tu cuenta y podés exportarlo a una playlist o carpeta numerada que Rekordbox / Serato / Engine DJ importan directo.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #ef4444, #f59e0b);">
+              <i class="fab fa-youtube text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Preview en alta calidad (YouTube Music + Beatport)</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">Para EDM, el preview viene del sample oficial de Beatport (calidad de release). Para POP / LATIN, se conecta a YouTube Music y reproduce el track completo en HQ — sin los clips de 30s comprimidos de iTunes.</p>
+              <p class="text-gray-400 leading-relaxed">El footer siempre muestra el track activo con waveform y controles. Un botoncito flotante abre/cierra el video de YouTube cuando querés mirarlo.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #10b981, #06b6d4);">
+              <i class="fas fa-mobile-screen text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">PWA instalable en celular y desktop</h2>
+              <p class="text-gray-400 leading-relaxed mb-3">DJ Free App es una <strong class="text-white">Progressive Web App</strong>. Desde Chrome / Edge / Safari podés "Instalar" la app y queda como un ícono en tu home screen (Android, iOS, Windows, macOS), sin pasar por App Store ni Google Play. Funciona en segundo plano y actualiza sola.</p>
+              <p class="text-gray-400 leading-relaxed">El preview, descubrimiento, biblioteca y set builder funcionan completos en mobile. Las descargas conviene hacerlas desde tu PC (necesita el agente local).</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+              <i class="fas fa-share-nodes text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Compartir tracks con link público</h2>
+              <p class="text-gray-400 leading-relaxed">Cada tema tiene un link compartible (<code class="text-blue-300 bg-blue-500/10 px-1 rounded">djfreeapp.ar/s/&lt;slug&gt;</code>) que abre una página pública con artwork, artista, título y preview embebido. Mandalo por WhatsApp, IG, Discord — el destinatario lo escucha sin instalar nada.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #6366f1, #ec4899);">
+              <i class="fas fa-moon text-xl text-white"></i>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Tema claro/oscuro + 5 colores de acento</h2>
+              <p class="text-gray-400 leading-relaxed">Modo oscuro o claro (se guarda por usuario). Color de acento configurable: azul, violeta, rosa, amber, verde. Todo el UI usa CSS variables, así que el cambio es instantáneo y consistente.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="px-4 md:px-6 py-16">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl md:text-4xl font-bold mb-4">¿Lo probamos?</h2>
+        <p class="text-gray-400 mb-6">7 días gratis. Sin tarjeta. Sin instalar nada.</p>
+        <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-base px-7 py-3.5">
+          <i class="fas fa-play"></i><span>Empezar ahora</span>
+        </a>
+        <p class="mt-8 text-sm text-gray-500">
+          ¿Querés ver el flujo en detalle? <a href="/como-funciona" class="text-blue-400 hover:text-blue-300 underline">Cómo funciona →</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[var(--dj-border)] px-4 md:px-6 py-10 mb-20 md:mb-0">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2 mb-3"><img src="images/logo.png" class="h-8" alt=""/><span class="font-bold text-white">DJ Free App</span></div>
+        <p class="text-gray-500 leading-relaxed text-xs">Herramienta gratuita para DJs.</p>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Producto</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="/features"      class="hover:text-white">Features</a></li>
+          <li><a href="/como-funciona" class="hover:text-white">Cómo funciona</a></li>
+          <li><a href="/precios"       class="hover:text-white">Precios</a></li>
+          <li><a href="/faq"           class="hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Empezar</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="hover:text-white">Abrir la app</a></li>
+          <li><a href="https://djfreeapp.ar/GrooveSyncAgent.exe" class="hover:text-white">Agente Windows</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Comunidad</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="https://github.com/arenazl/slsk-ui" target="_blank" rel="noopener" class="hover:text-white">GitHub</a></li>
+          <li><a href="mailto:arenazl@gmail.com" class="hover:text-white">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[var(--dj-border)] text-xs text-gray-600 text-center">© 2026 DJ Free App.</div>
+  </footer>
+
+  <nav class="mobile-bottom-nav md:hidden">
+    <div class="flex justify-around items-center py-2 px-2">
+      <a href="/" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-home text-sm text-gray-400"></i></div><span class="text-[10px] text-gray-500">Inicio</span></a>
+      <a href="/features" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(59,130,246,0.05));"><i class="fas fa-bolt text-sm text-blue-400"></i></div><span class="text-[10px] text-white font-semibold">Features</span></a>
+      <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-10 h-10 rounded-full flex items-center justify-center -mt-3" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899); box-shadow: 0 6px 20px rgba(139,92,246,0.5);"><i class="fas fa-play text-white"></i></div><span class="text-[10px] text-white font-semibold">Abrir</span></a>
+      <a href="/precios" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-tags text-sm text-green-400"></i></div><span class="text-[10px] text-gray-400">Precios</span></a>
+      <a href="/faq" class="flex flex-col items-center gap-1 py-1 px-2"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5"><i class="fas fa-circle-question text-sm text-amber-400"></i></div><span class="text-[10px] text-gray-400">FAQ</span></a>
+    </div>
+  </nav>
+
+  <script src="js/landing.js" defer></script>
+</body>
+</html>

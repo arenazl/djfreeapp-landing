@@ -1,0 +1,44 @@
+[build]
+  publish = "."
+
+# Cabeceras para SEO y rendimiento.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "interest-cohort=()"
+
+# Cache largo para assets estáticos.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML siempre fresco para que el cambio en meta tags llegue rápido a Google.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirects para que las URLs amigables del nav vayan al hash.
+[[redirects]]
+  from = "/features"
+  to = "/#features"
+  status = 301
+
+[[redirects]]
+  from = "/precios"
+  to = "/#precios"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/#faq"
+  status = 301

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Free App — Descargá, organizá y mezclá tu música gratis | Beatport, Spotify, SoulSeek</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#3b82f6" />
+
+  <!-- SEO -->
+  <meta name="description" content="DJ Free App es la herramienta gratis para DJs: descubrí música nueva (Beatport, Spotify), descargá temas desde SoulSeek, organizá tu biblioteca por género, armá sets con drag & drop y mezclá con el Mix Editor. Web + PWA + agente local. Probalo gratis." />
+  <meta name="keywords" content="dj free, app dj gratis, descargar musica dj, beatport, spotify, soulseek, set builder, mix editor, dj software argentina, dj web app, pwa dj, biblioteca dj, dj sin pagar" />
+  <meta name="author" content="DJ Free App" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="geo.region" content="AR" />
+  <meta name="geo.country" content="Argentina" />
+  <link rel="canonical" href="https://djfreeapp.ar/" />
+  <link rel="alternate" hreflang="es-ar" href="https://djfreeapp.ar/" />
+  <link rel="alternate" hreflang="es" href="https://djfreeapp.ar/" />
+  <link rel="alternate" hreflang="x-default" href="https://djfreeapp.ar/" />
+
+  <!-- Preconnect para acelerar carga -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://djfreeapp.ar/" />
+  <meta property="og:title" content="DJ Free App — Descargá, organizá y mezclá tu música gratis" />
+  <meta property="og:description" content="Descubrí música en Beatport y Spotify, descargá temas de SoulSeek, armá sets y mezclá. Todo gratis, en el navegador. PWA instalable + agente local para descargas." />
+  <meta property="og:image" content="https://djfreeapp.ar/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DJ Free App — herramienta DJ gratis" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="DJ Free App" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://djfreeapp.ar/" />
+  <meta name="twitter:title" content="DJ Free App — Descargá, organizá y mezclá música gratis" />
+  <meta name="twitter:description" content="Beatport + Spotify + SoulSeek + Set Builder + Mix Editor. Todo en una app web gratis." />
+  <meta name="twitter:image" content="https://djfreeapp.ar/images/og-image.jpg" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DJ Free App",
+    "alternateName": "DJ Free App — herramienta para DJs",
+    "description": "Aplicación web gratuita para DJs: descubrimiento de música (Beatport, Spotify), descarga desde SoulSeek, biblioteca organizada por género, set builder con drag & drop y mix editor con timeline y cue points.",
+    "url": "https://djfreeapp.ar/",
+    "applicationCategory": "MultimediaApplication",
+    "applicationSubCategory": "DJ Software",
+    "operatingSystem": "Web, Windows, macOS, iOS, Android",
+    "inLanguage": "es-AR",
+    "image": "https://djfreeapp.ar/images/og-image.jpg",
+    "screenshot": "https://djfreeapp.ar/images/og-image.jpg",
+    "softwareVersion": "1.0",
+    "featureList": [
+      "Discover: Beatport Top 100 y Spotify charts integrados",
+      "Descarga ilimitada desde la red SoulSeek",
+      "Biblioteca organizada automáticamente por género",
+      "Set Builder con drag & drop entre Sugerencias y biblioteca",
+      "Mix Editor con timeline, zoom y cue points",
+      "Preview con audio HQ vía YouTube Music para POP/LATIN",
+      "PWA instalable en celular y desktop",
+      "Agente local para descargas en tu PC",
+      "Compartir tracks con link público",
+      "Modo claro y oscuro",
+      "Detección de duplicados",
+      "Exportar set a carpeta o ZIP"
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Trial gratis",
+        "price": "0",
+        "priceCurrency": "ARS",
+        "description": "7 días gratis con todas las features"
+      },
+      {
+        "@type": "Offer",
+        "name": "Suscripción",
+        "price": "4990",
+        "priceCurrency": "ARS",
+        "description": "Acceso completo, descargas ilimitadas, soporte"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "127"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DJ Free App",
+    "url": "https://djfreeapp.ar/",
+    "logo": "https://djfreeapp.ar/images/logo.png",
+    "image": "https://djfreeapp.ar/images/og-image.jpg",
+    "description": "Plataforma web gratuita para DJs: descubrimiento de música, descarga, biblioteca, set builder y mix editor en un solo lugar.",
+    "areaServed": [
+      { "@type": "Country", "name": "Argentina" },
+      { "@type": "Country", "name": "México" },
+      { "@type": "Country", "name": "España" },
+      { "@type": "Country", "name": "Chile" },
+      { "@type": "Country", "name": "Colombia" },
+      { "@type": "Country", "name": "Uruguay" }
+    ],
+    "sameAs": [
+      "https://github.com/arenazl/slsk-ui",
+      "https://www.instagram.com/djfreeapp"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://djfreeapp.ar/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es DJ Free App?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DJ Free App es una herramienta web gratuita para DJs que integra descubrimiento de música (Beatport, Spotify), descarga desde SoulSeek, biblioteca organizada por género, armado de sets con drag & drop y un mix editor con timeline. Funciona en el navegador, se puede instalar como PWA y tiene un agente local opcional para descargar a tu PC."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es gratis de verdad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Tenés 7 días de trial gratuito con todas las features sin pedir tarjeta. Después podés suscribirte para descargas ilimitadas, o seguir usando el descubrimiento, biblioteca y mix editor con un plan básico."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿De dónde se descargan los temas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DJ Free App se conecta a la red SoulSeek, una red P2P de música. La descarga se ejecuta a través del agente local en tu propia PC, que la app provee como un .exe (Windows) o un script (macOS). El backend solo orquesta la búsqueda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Funciona en celular?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. DJ Free App es una PWA (Progressive Web App), lo que significa que se puede instalar en el celular como una app nativa, sin pasar por App Store o Google Play. El preview, descubrimiento, biblioteca y set builder funcionan completos en mobile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué géneros soporta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EDM en todas sus variantes (Tech House, Melodic Techno, Progressive, Trance, Drum & Bass, Bass House, Future House, Afro House y más), POP y LATIN (Reggaeton, Cumbia, Dembow, Salsa, Bachata). Las charts se actualizan en vivo desde Beatport y Spotify."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo armar y exportar un set?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El Set Builder permite arrastrar temas desde tu biblioteca o desde sugerencias automáticas, ordenarlos, y exportar a una carpeta de tu PC o como ZIP. También podés abrir el Mix Editor para definir orden, cue points y transiciones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se compara con Rekordbox o Serato?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rekordbox y Serato son DJ controllers / playback engines pensados para tocar en vivo. DJ Free App es complementaria: se enfoca en descubrir, descargar y organizar la música ANTES de pasarla a Rekordbox/Serato/Engine DJ. Exportás el set ya curado y lo abrís en tu DJ software favorito."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind v3.3.7 (issue #14486 en 3.4.x con clases dinámicas) -->
+  <script src="https://cdn.tailwindcss.com/3.3.7"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+    * {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 80px; }
+    @media (max-width: 767px) { section[id] { scroll-margin-top: 100px; } }
+
+    /* Brand palette — same accent as the app (var(--color-accent) = #3b82f6) */
+    :root {
+      --dj-blue:    #3b82f6;
+      --dj-violet:  #8b5cf6;
+      --dj-pink:    #ec4899;
+      --dj-cyan:    #06b6d4;
+      --dj-bg-app:   #0a0a0f;
+      --dj-bg-panel: #111118;
+      --dj-bg-surf:  #16161f;
+      --dj-text:     #f3f4f6;
+      --dj-text-2:   #9ca3af;
+      --dj-text-3:   #6b7280;
+      --dj-border:   #1f2937;
+    }
+
+    body {
+      background: var(--dj-bg-app);
+      color: var(--dj-text);
+      overflow-x: hidden;
+    }
+
+    /* Animated gradient blobs in the hero */
+    .blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(80px);
+      opacity: 0.45;
+      pointer-events: none;
+      animation: blob 14s ease-in-out infinite;
+    }
+    @keyframes blob {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33%      { transform: translate(40px, -50px) scale(1.1); }
+      66%      { transform: translate(-30px, 30px) scale(0.95); }
+    }
+    .blob-2 { animation-delay: -4s; }
+    .blob-3 { animation-delay: -8s; }
+
+    /* Glassmorphism topbar */
+    .top-bar {
+      background: rgba(10, 10, 15, 0.6);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .top-bar.scrolled {
+      background: rgba(10, 10, 15, 0.85);
+      border-bottom-color: var(--dj-border);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Primary CTA */
+    .btn-dj {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      border-radius: 0.75rem;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-dj-primary {
+      background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    .btn-dj-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(139, 92, 246, 0.5);
+      filter: brightness(1.1);
+    }
+    .btn-dj-primary:active { transform: scale(0.97); }
+    .btn-dj-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--dj-text);
+      border: 1px solid var(--dj-border);
+      padding: 0.75rem 1.25rem;
+    }
+    .btn-dj-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Cards with subtle gradient border on hover */
+    .feature-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid var(--dj-border);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(135deg, transparent, var(--dj-blue), var(--dj-violet), var(--dj-pink), transparent);
+      border-radius: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: transparent;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    }
+    .feature-card:hover::before { opacity: 0.4; }
+
+    /* Section divider */
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--dj-border), transparent);
+      margin: 4rem 0;
+    }
+
+    /* Fade-in on scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Gradient text */
+    .grad-text {
+      background: linear-gradient(135deg, #60a5fa, #c084fc, #f472b6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* Mobile bottom nav */
+    .mobile-bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      background: rgba(10, 10, 15, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-top: 1px solid var(--dj-border);
+      box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Pricing card highlight */
+    .pricing-popular {
+      position: relative;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.12), rgba(236, 72, 153, 0.04));
+      border: 1px solid rgba(139, 92, 246, 0.4);
+    }
+    .pricing-popular::before {
+      content: 'MÁS POPULAR';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 9999px;
+    }
+
+    /* Marquee for source logos */
+    .marquee {
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 3rem;
+      animation: marquee 32s linear infinite;
+      width: max-content;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ─────────── TOP BAR ─────────── -->
+  <header id="topBar" class="top-bar fixed top-0 left-0 right-0 z-50 px-3 md:px-6 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 group">
+        <img src="images/logo.png" alt="DJ Free App" class="h-8 w-auto" />
+        <span class="font-bold text-base md:text-lg text-white">DJ Free App</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="/features"   class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Features</a>
+        <a href="/como-funciona"       class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Cómo funciona</a>
+        <a href="/fuentes"    class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Fuentes</a>
+        <a href="/generos"    class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Géneros</a>
+        <a href="/precios"    class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Precios</a>
+        <a href="/faq"        class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-2 md:gap-3">
+        <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-sm py-2 px-4">
+          <i class="fas fa-play"></i>
+          <span>Empezar gratis</span>
+        </a>
+        <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors" aria-label="Abrir menú">
+          <i class="fas fa-bars text-xl text-white"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─────────── MOBILE MENU DRAWER ─────────── -->
+  <div id="mobileMenu" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeMobileMenu()"></div>
+    <div class="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-[var(--dj-bg-panel)] border-l border-[var(--dj-border)] shadow-2xl transform transition-transform duration-300">
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-8">
+          <div class="flex items-center gap-3">
+            <img src="images/logo.png" alt="DJ Free App" class="h-9 w-auto" />
+            <span class="font-bold text-lg text-white">DJ Free App</span>
+          </div>
+          <button onclick="closeMobileMenu()" class="p-2 rounded-lg hover:bg-white/5" aria-label="Cerrar">
+            <i class="fas fa-times text-xl text-gray-400"></i>
+          </button>
+        </div>
+        <nav class="space-y-1">
+          <a href="/features"  onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
+            <i class="fas fa-bolt w-6 text-blue-400"></i>
+            <span class="font-medium text-gray-200">Features</span>
+          </a>
+          <a href="/como-funciona" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
+            <i class="fas fa-route w-6 text-purple-400"></i>
+            <span class="font-medium text-gray-200">Cómo funciona</span>
+          </a>
+          <a href="/fuentes" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
+            <i class="fas fa-database w-6 text-pink-400"></i>
+            <span class="font-medium text-gray-200">Fuentes</span>
+          </a>
+          <a href="/generos" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
+            <i class="fas fa-music w-6 text-cyan-400"></i>
+            <span class="font-medium text-gray-200">Géneros</span>
+          </a>
+          <a href="/precios" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
+            <i class="fas fa-tags w-6 text-green-400"></i>
+            <span class="font-medium text-gray-200">Precios</span>
+          </a>
+          <a href="/faq" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors">
+            <i class="fas fa-circle-question w-6 text-amber-400"></i>
+            <span class="font-medium text-gray-200">FAQ</span>
+          </a>
+        </nav>
+        <div class="mt-8 pt-6 border-t border-[var(--dj-border)]">
+          <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" onclick="closeMobileMenu()" class="btn-dj btn-dj-primary w-full">
+            <i class="fas fa-play"></i>
+            <span>Empezar gratis</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────── MAIN ─────────── -->
+  <main class="pt-20 pb-20 md:pb-12 overflow-x-hidden">
+
+    <!-- ─────────── HERO ─────────── -->
+    <section id="hero" class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      <!-- Animated blobs -->
+      <div class="blob"   style="width: 400px; height: 400px; background: var(--dj-blue);   top: -120px; left: -100px;"></div>
+      <div class="blob blob-2" style="width: 500px; height: 500px; background: var(--dj-violet); bottom: -180px; right: -150px;"></div>
+      <div class="blob blob-3" style="width: 300px; height: 300px; background: var(--dj-pink);   top: 30%; left: 50%;"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-20 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300 mb-6">
+          <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          7 días gratis · sin tarjeta · sin instalar nada
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
+          Descubrí, descargá y mezclá<br />
+          <span class="grad-text">tu música</span>
+        </h1>
+
+        <p class="text-base md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-8">
+          La herramienta de DJ que junta <strong class="text-white">Beatport</strong>, <strong class="text-white">Spotify</strong>, <strong class="text-white">SoulSeek</strong>, biblioteca, set builder y mix editor en una sola web app gratis.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
+          <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-base px-7 py-3.5">
+            <i class="fas fa-play"></i>
+            <span>Empezar ahora</span>
+          </a>
+          <a href="#demo" class="btn-dj btn-dj-secondary text-base px-6 py-3.5">
+            <i class="fas fa-circle-play"></i>
+            <span>Ver demo (2 min)</span>
+          </a>
+        </div>
+
+        <!-- Demo video preview — mismo aspect ratio que el modal DemoShowcase de la app (16:9). -->
+        <div id="demo" class="relative w-full max-w-5xl mx-auto aspect-video rounded-2xl overflow-hidden bg-slate-950 ring-1 ring-white/10 shadow-2xl shadow-purple-900/30">
+          <video
+            src="images/demo.mp4"
+            muted
+            loop
+            playsinline
+            autoplay
+            preload="metadata"
+            class="absolute inset-0 w-full h-full object-cover"
+          ></video>
+        </div>
+
+        <!-- KPIs -->
+        <div class="grid grid-cols-3 gap-3 md:gap-8 mt-12 max-w-3xl mx-auto">
+          <div class="text-center">
+            <div class="text-2xl md:text-4xl font-bold grad-text">5M+</div>
+            <div class="text-xs md:text-sm text-gray-500 mt-1">tracks accesibles</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl md:text-4xl font-bold grad-text">100+</div>
+            <div class="text-xs md:text-sm text-gray-500 mt-1">géneros y charts</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl md:text-4xl font-bold grad-text">0</div>
+            <div class="text-xs md:text-sm text-gray-500 mt-1">apps que instalar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── FEATURES ─────────── -->
+    <section id="features" class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400 mb-4">
+            <i class="fas fa-bolt"></i> FEATURES
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Todo lo que necesita un DJ, <span class="grad-text">en una pestaña</span></h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">Pensada por DJs para DJs. Sin software pesado, sin licencias caras, sin trucos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);">
+              <i class="fas fa-compass text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Discover en vivo</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Charts en tiempo real de Beatport (EDM por género y label) y Spotify (POP / LATIN por país). Filtros por género, año y popularidad.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+              <i class="fas fa-download text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Descarga 1-click</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Click en cualquier tema → busca, prioriza calidad (FLAC &gt; 320 kbps &gt; 256) y baja a tu PC vía agente local. Cero configuración.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #06b6d4, #10b981);">
+              <i class="fas fa-folder-tree text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Biblioteca por género</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Los temas se ordenan solos en subcarpetas por género (Tech House, Melodic Techno, Reggaeton...). Detección de duplicados incluida.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
+              <i class="fas fa-bars-staggered text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Set Builder</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Drag &amp; drop entre sugerencias automáticas y tu biblioteca. Ordenamiento por BPM, energy, key. Exportá a carpeta o ZIP.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">
+              <i class="fas fa-wave-square text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Mix Editor</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Timeline con zoom (Ctrl + rueda), cue points, marcadores y orden visual del set. Listo para abrirlo en Rekordbox / Serato.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #ef4444, #f59e0b);">
+              <i class="fab fa-youtube text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Preview HQ</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Audio en alta calidad vía YouTube Music para POP / LATIN. Beatport te da el sample oficial. Sin clips chistosos de 30s.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #10b981, #06b6d4);">
+              <i class="fas fa-mobile-screen text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">PWA instalable</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Instalala en tu celular o desktop como app nativa. Sin App Store, sin Play Store. Funciona en background.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+              <i class="fas fa-share-nodes text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Compartir tracks</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">Cada tema tiene un link público con preview embebido. Mandalo por WhatsApp, IG o donde quieras.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #6366f1, #ec4899);">
+              <i class="fas fa-moon text-xl text-white"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Tema claro / oscuro</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">5 colores de acento (azul, violeta, rosa, amber, verde) + dark/light. Se guarda por usuario.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ─────────── CÓMO FUNCIONA ─────────── -->
+    <section id="como" class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400 mb-4">
+            <i class="fas fa-route"></i> CÓMO FUNCIONA
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">De la chart a tu USB <span class="grad-text">en 3 pasos</span></h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 md:gap-6 relative">
+          <!-- Connecting line -->
+          <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-px bg-gradient-to-r from-blue-500/20 via-purple-500/40 to-pink-500/20"></div>
+
+          <div class="feature-card fade-in text-center relative z-10">
+            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-2xl font-bold text-white" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">1</div>
+            <h3 class="text-lg font-semibold mb-2">Elegí la chart</h3>
+            <p class="text-sm text-gray-400">Beatport Top 100 por género, Spotify Top 50 por país, charts de labels favoritos o un Set Builder propio.</p>
+          </div>
+
+          <div class="feature-card fade-in text-center relative z-10">
+            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-2xl font-bold text-white" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">2</div>
+            <h3 class="text-lg font-semibold mb-2">Dale play y bajá</h3>
+            <p class="text-sm text-gray-400">Preview HQ instantáneo. Click derecho → Descargar. El agente local trae el archivo con la mejor calidad disponible.</p>
+          </div>
+
+          <div class="feature-card fade-in text-center relative z-10">
+            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-2xl font-bold text-white" style="background: linear-gradient(135deg, #ec4899, #f59e0b);">3</div>
+            <h3 class="text-lg font-semibold mb-2">Armá el set</h3>
+            <p class="text-sm text-gray-400">Drag &amp; drop al Set Builder, ordenalos, exportalos a tu carpeta de Rekordbox / Serato / Engine DJ. Tocar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ─────────── FUENTES ─────────── -->
+    <section id="fuentes" class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400 mb-4">
+            <i class="fas fa-database"></i> FUENTES
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Charts de <span class="grad-text">los que importan</span></h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">Integración directa con las charts y catálogos más relevantes de la industria.</p>
+        </div>
+
+        <div class="marquee py-6">
+          <div class="marquee-track">
+            <div class="flex items-center gap-12 text-2xl md:text-3xl font-bold text-gray-500">
+              <span><i class="fas fa-record-vinyl mr-2"></i>Beatport</span>
+              <span><i class="fab fa-spotify mr-2 text-green-500"></i>Spotify</span>
+              <span><i class="fas fa-water mr-2"></i>SoulSeek</span>
+              <span><i class="fab fa-youtube mr-2 text-red-500"></i>YouTube Music</span>
+              <span><i class="fab fa-itunes-note mr-2"></i>iTunes</span>
+              <span><i class="fas fa-record-vinyl mr-2"></i>Beatport</span>
+              <span><i class="fab fa-spotify mr-2 text-green-500"></i>Spotify</span>
+              <span><i class="fas fa-water mr-2"></i>SoulSeek</span>
+              <span><i class="fab fa-youtube mr-2 text-red-500"></i>YouTube Music</span>
+              <span><i class="fab fa-itunes-note mr-2"></i>iTunes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 md:gap-6 mt-8">
+          <div class="feature-card fade-in">
+            <div class="flex items-center gap-3 mb-3">
+              <i class="fas fa-record-vinyl text-2xl text-orange-400"></i>
+              <h3 class="text-lg font-semibold">Beatport</h3>
+            </div>
+            <p class="text-sm text-gray-400">Top 100 por género, charts de labels, Hype 100, Beatport Decade. Filtros por BPM, key, fecha.</p>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="flex items-center gap-3 mb-3">
+              <i class="fab fa-spotify text-2xl text-green-500"></i>
+              <h3 class="text-lg font-semibold">Spotify</h3>
+            </div>
+            <p class="text-sm text-gray-400">Top 50 global, por país, charts de Reggaeton, Cumbia, Pop, Indie. Playlists oficiales y de editores.</p>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="flex items-center gap-3 mb-3">
+              <i class="fas fa-water text-2xl text-blue-400"></i>
+              <h3 class="text-lg font-semibold">SoulSeek</h3>
+            </div>
+            <p class="text-sm text-gray-400">Red P2P con millones de usuarios. Acceso a discos completos, edits, bootlegs, vinyl rips en FLAC.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ─────────── GÉNEROS ─────────── -->
+    <section id="generos" class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+            <i class="fas fa-music"></i> GÉNEROS
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">EDM, POP y <span class="grad-text">Latin completo</span></h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">Tres mundos en una app, con sus charts y catálogos integrados.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+          <div class="feature-card fade-in">
+            <div class="text-xs font-bold text-blue-400 mb-2">EDM</div>
+            <h3 class="text-xl font-semibold mb-3">Electronic</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Tech House</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Melodic Techno</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Progressive</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Trance</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Drum &amp; Bass</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Bass House</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Future House</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Afro House</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Deep House</span>
+            </div>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="text-xs font-bold text-pink-400 mb-2">LATIN</div>
+            <h3 class="text-xl font-semibold mb-3">Latino</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Reggaeton</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Cumbia</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Dembow</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Salsa</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Bachata</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Club hits LATAM</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Trap LATAM</span>
+            </div>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="text-xs font-bold text-purple-400 mb-2">POP</div>
+            <h3 class="text-xl font-semibold mb-3">Mainstream</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Top 50 Global</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Top 50 por país</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Indie Pop</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Hip Hop</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">R&amp;B</span>
+              <span class="px-2 py-1 rounded-full bg-white/5 text-xs text-gray-300">Clásicos 80s / 90s / 2000s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ─────────── PRECIOS ─────────── -->
+    <section id="precios" class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-xs font-semibold text-green-400 mb-4">
+            <i class="fas fa-tags"></i> PRECIOS
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Empezá <span class="grad-text">gratis</span></h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">7 días de trial completo, sin tarjeta. Si te gusta, son menos de un par de cervezas al mes.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+
+          <div class="feature-card fade-in flex flex-col">
+            <div class="mb-4">
+              <h3 class="text-2xl font-bold mb-1">Free</h3>
+              <p class="text-sm text-gray-400">Para probar la app</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-5xl font-bold">$0</span>
+              <span class="text-gray-400 ml-1">/ por siempre</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Discover completo (Beatport + Spotify)</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Preview ilimitado (HQ vía YouTube)</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Set Builder y Mix Editor</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> 7 días de descargas gratis</li>
+              <li class="flex items-start gap-2 text-sm text-gray-500"><i class="fas fa-xmark text-gray-600 mt-1"></i> Descargas ilimitadas después del trial</li>
+            </ul>
+            <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-secondary w-full">Probar gratis</a>
+          </div>
+
+          <div class="feature-card pricing-popular fade-in flex flex-col">
+            <div class="mb-4">
+              <h3 class="text-2xl font-bold mb-1">Pro</h3>
+              <p class="text-sm text-gray-400">Para DJs que tocan</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-5xl font-bold grad-text">$4.990</span>
+              <span class="text-gray-400 ml-1">ARS / mes</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Todo lo del plan Free</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Descargas ilimitadas (FLAC / 320 kbps)</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Agente local con auto-update</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Set Builder con sugerencias IA</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Soporte por WhatsApp</li>
+              <li class="flex items-start gap-2 text-sm text-gray-300"><i class="fas fa-check text-green-400 mt-1"></i> Cancelás cuando quieras</li>
+            </ul>
+            <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-primary w-full">Empezar trial gratis</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ─────────── FAQ ─────────── -->
+    <section id="faq" class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-xs font-semibold text-amber-400 mb-4">
+            <i class="fas fa-circle-question"></i> FAQ
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Dudas <span class="grad-text">frecuentes</span></h2>
+        </div>
+
+        <div class="space-y-3">
+          <details class="feature-card fade-in group cursor-pointer">
+            <summary class="flex items-center justify-between font-semibold list-none">
+              <span>¿Es gratis de verdad?</span>
+              <i class="fas fa-chevron-down transition-transform group-open:rotate-180 text-gray-400"></i>
+            </summary>
+            <p class="mt-3 text-sm text-gray-400 leading-relaxed">Sí. Tenés 7 días de trial completo sin pedir tarjeta. Después podés seguir usando Discover, Preview, Set Builder y Mix Editor en plan Free. La suscripción Pro solo desbloquea las descargas ilimitadas.</p>
+          </details>
+
+          <details class="feature-card fade-in group cursor-pointer">
+            <summary class="flex items-center justify-between font-semibold list-none">
+              <span>¿De dónde se descargan los temas?</span>
+              <i class="fas fa-chevron-down transition-transform group-open:rotate-180 text-gray-400"></i>
+            </summary>
+            <p class="mt-3 text-sm text-gray-400 leading-relaxed">Desde la red SoulSeek, una red P2P de música usada por DJs hace 20 años. El backend solo orquesta la búsqueda; la descarga la ejecuta el agente local que corre en tu PC.</p>
+          </details>
+
+          <details class="feature-card fade-in group cursor-pointer">
+            <summary class="flex items-center justify-between font-semibold list-none">
+              <span>¿Funciona en celular?</span>
+              <i class="fas fa-chevron-down transition-transform group-open:rotate-180 text-gray-400"></i>
+            </summary>
+            <p class="mt-3 text-sm text-gray-400 leading-relaxed">Sí. La app es una PWA — se instala desde el navegador (Chrome / Safari) como una app nativa. Discover, Preview, Set Builder y Biblioteca funcionan completos en mobile. Las descargas, como necesitan agente, conviene hacerlas desde tu PC.</p>
+          </details>
+
+          <details class="feature-card fade-in group cursor-pointer">
+            <summary class="flex items-center justify-between font-semibold list-none">
+              <span>¿Cómo se compara con Rekordbox / Serato / Engine DJ?</span>
+              <i class="fas fa-chevron-down transition-transform group-open:rotate-180 text-gray-400"></i>
+            </summary>
+            <p class="mt-3 text-sm text-gray-400 leading-relaxed">Rekordbox y Serato son DJ controllers / playback engines pensados para tocar en vivo. DJ Free App es complementaria: se enfoca en descubrir, descargar y organizar música ANTES de pasarla a tu DJ software. Exportás el set ya curado y lo abrís en Rekordbox/Serato/Engine DJ.</p>
+          </details>
+
+          <details class="feature-card fade-in group cursor-pointer">
+            <summary class="flex items-center justify-between font-semibold list-none">
+              <span>¿Qué pasa con derechos de autor?</span>
+              <i class="fas fa-chevron-down transition-transform group-open:rotate-180 text-gray-400"></i>
+            </summary>
+            <p class="mt-3 text-sm text-gray-400 leading-relaxed">DJ Free App es una herramienta. La responsabilidad sobre el uso de cualquier archivo descargado es del usuario. Si vas a tocar comercialmente, asegurate de tener las licencias correspondientes (SADAIC / SADEM en Argentina, o tu sociedad local).</p>
+          </details>
+
+          <details class="feature-card fade-in group cursor-pointer">
+            <summary class="flex items-center justify-between font-semibold list-none">
+              <span>¿Puedo cancelar cuando quiera?</span>
+              <i class="fas fa-chevron-down transition-transform group-open:rotate-180 text-gray-400"></i>
+            </summary>
+            <p class="mt-3 text-sm text-gray-400 leading-relaxed">Sí. La suscripción Pro se gestiona por Mercado Pago. Cancelás en cualquier momento desde el panel de tu cuenta o desde Mercado Pago directamente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ─────────── CTA FINAL ─────────── -->
+    <section class="px-4 md:px-6 py-16 md:py-24">
+      <div class="max-w-4xl mx-auto text-center relative overflow-hidden rounded-3xl p-8 md:p-16 border border-white/10" style="background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(139,92,246,0.15), rgba(236,72,153,0.15));">
+        <div class="blob" style="width: 300px; height: 300px; background: var(--dj-blue);   top: -100px; left: -50px;"></div>
+        <div class="blob blob-2" style="width: 300px; height: 300px; background: var(--dj-pink); bottom: -100px; right: -50px;"></div>
+
+        <div class="relative z-10">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">Listo para <span class="grad-text">empezar</span></h2>
+          <p class="text-gray-300 max-w-xl mx-auto mb-8">Probalo gratis 7 días. Sin tarjeta. Sin instalar nada. Solo abrí la web y empezás.</p>
+          <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="btn-dj btn-dj-primary text-lg px-8 py-4">
+            <i class="fas fa-play"></i>
+            <span>Empezar ahora — es gratis</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─────────── FOOTER ─────────── -->
+  <footer class="border-t border-[var(--dj-border)] px-4 md:px-6 py-10 mb-20 md:mb-0">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <img src="images/logo.png" alt="DJ Free App" class="h-8 w-auto" />
+          <span class="font-bold text-white">DJ Free App</span>
+        </div>
+        <p class="text-gray-500 leading-relaxed text-xs">Herramienta gratuita para DJs. Descubrí, descargá y mezclá tu música desde un solo lugar.</p>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Producto</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="/features"   class="hover:text-white transition-colors">Features</a></li>
+          <li><a href="/como-funciona"       class="hover:text-white transition-colors">Cómo funciona</a></li>
+          <li><a href="/precios"    class="hover:text-white transition-colors">Precios</a></li>
+          <li><a href="/faq"        class="hover:text-white transition-colors">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Empezar</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="hover:text-white transition-colors">Abrir la app</a></li>
+          <li><a href="https://djfreeapp.ar/GrooveSyncAgent.exe" class="hover:text-white transition-colors">Descargar agente (Win)</a></li>
+          <li><a href="https://github.com/arenazl/slsk-agent/releases" target="_blank" rel="noopener" class="hover:text-white transition-colors">Agente macOS</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider font-semibold text-gray-400 mb-3">Comunidad</div>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="https://github.com/arenazl/slsk-ui" target="_blank" rel="noopener" class="hover:text-white transition-colors">GitHub</a></li>
+          <li><a href="https://www.instagram.com/djfreeapp" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a></li>
+          <li><a href="mailto:arenazl@gmail.com" class="hover:text-white transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-[var(--dj-border)] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+      <p>© 2026 DJ Free App. Hecho con ♥ en Argentina.</p>
+      <p>Trial 7 días · Cancelá cuando quieras · Sin compromiso</p>
+    </div>
+  </footer>
+
+  <!-- ─────────── MOBILE BOTTOM NAV ─────────── -->
+  <nav class="mobile-bottom-nav md:hidden">
+    <div class="flex justify-around items-center py-2 px-2">
+      <a href="#hero" class="flex flex-col items-center gap-1 py-1 px-2">
+        <div class="w-9 h-9 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(59,130,246,0.05));">
+          <i class="fas fa-home text-sm text-blue-400"></i>
+        </div>
+        <span class="text-[10px] text-gray-400 font-medium">Inicio</span>
+      </a>
+      <a href="/features" class="flex flex-col items-center gap-1 py-1 px-2">
+        <div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5">
+          <i class="fas fa-bolt text-sm text-purple-400"></i>
+        </div>
+        <span class="text-[10px] text-gray-400 font-medium">Features</span>
+      </a>
+      <a href="https://groovesyncdj.netlify.app" target="_blank" rel="noopener" class="flex flex-col items-center gap-1 py-1 px-2">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center -mt-3" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899); box-shadow: 0 6px 20px rgba(139,92,246,0.5);">
+          <i class="fas fa-play text-white"></i>
+        </div>
+        <span class="text-[10px] text-white font-semibold">Abrir</span>
+      </a>
+      <a href="/precios" class="flex flex-col items-center gap-1 py-1 px-2">
+        <div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5">
+          <i class="fas fa-tags text-sm text-green-400"></i>
+        </div>
+        <span class="text-[10px] text-gray-400 font-medium">Precios</span>
+      </a>
+      <a href="/faq" class="flex flex-col items-center gap-1 py-1 px-2">
+        <div class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5">
+          <i class="fas fa-circle-question text-sm text-amber-400"></i>
+        </div>
+        <span class="text-[10px] text-gray-400 font-medium">FAQ</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ─────────── JS ─────────── -->
+  <script>
+    // Mobile menu
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    function openMobileMenu()  { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.add('hidden');    document.body.style.overflow = ''; }
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+
+    // Top bar shadow on scroll
+    const topBar = document.getElementById('topBar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) topBar.classList.add('scrolled');
+      else                     topBar.classList.remove('scrolled');
+    });
+
+    // Fade-in on scroll via IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>

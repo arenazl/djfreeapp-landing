@@ -1,0 +1,16 @@
+{
+  "name": "DJ Free App",
+  "short_name": "DJ Free App",
+  "description": "Descubrí, descargá y mezclá tu música gratis — Beatport, Spotify, SoulSeek, Set Builder y Mix Editor en una sola app web.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#3b82f6",
+  "lang": "es-AR",
+  "categories": ["music", "multimedia", "productivity"],
+  "icons": [
+    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
