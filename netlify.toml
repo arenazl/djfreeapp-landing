@@ -34,3 +34,11 @@
   to = "https://app.djfreeapp.ar/s/:splat"
   status = 302
   force = true
+
+# Agente Windows: el binario vive en la app (no duplicamos 55MB en la landing).
+# La URL pública djfreeapp.ar/GrooveSyncAgent.exe redirige al binario real.
+[[redirects]]
+  from = "/GrooveSyncAgent.exe"
+  to = "https://app.djfreeapp.ar/GrooveSyncAgent.exe"
+  status = 302
+  force = true
