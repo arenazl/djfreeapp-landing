@@ -27,18 +27,10 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Redirects para que las URLs amigables del nav vayan al hash.
+# Share links de tracks: djfreeapp.ar/s/<slug> → app real (SPA).
+# Mantenemos la URL corta y compartible en el dominio raíz.
 [[redirects]]
-  from = "/features"
-  to = "/#features"
-  status = 301
-
-[[redirects]]
-  from = "/precios"
-  to = "/#precios"
-  status = 301
-
-[[redirects]]
-  from = "/faq"
-  to = "/#faq"
-  status = 301
+  from = "/s/*"
+  to = "https://app.djfreeapp.ar/s/:splat"
+  status = 302
+  force = true
