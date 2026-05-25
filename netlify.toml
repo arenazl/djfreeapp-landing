@@ -27,12 +27,15 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Share links de tracks: djfreeapp.ar/s/<slug> → app real (SPA).
-# Mantenemos la URL corta y compartible en el dominio raíz.
+# Share links de tracks: djfreeapp.ar/s/<slug> → Netlify Function que devuelve
+# HTML con Open Graph tags reales (artist+title+cover). Sin esto, WhatsApp/
+# Telegram muestran solo "DJ Free App" porque no hay metadata específica del
+# track en el HTML. La function llama al server para obtener la metadata,
+# arma el HTML con OG tags, y mete un meta-refresh hacia app.djfreeapp.ar.
 [[redirects]]
   from = "/s/*"
-  to = "https://app.djfreeapp.ar/s/:splat"
-  status = 302
+  to = "/.netlify/functions/share"
+  status = 200
   force = true
 
 # Agente Windows: el binario vive en la app (no duplicamos 55MB en la landing).
