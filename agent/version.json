@@ -1,0 +1,6 @@
+{
+  "version": "2.12.0",
+  "windows_url": "https://github.com/arenazl/slsk-agent/releases/download/v2.12.0/GrooveSyncAgent.exe",
+  "macos_url": "https://github.com/arenazl/slsk-agent/releases/download/v2.12.0/GrooveSyncAgent-macOS.zip",
+  "release_notes": "Tunel WS reverso saliente (sin Tailscale ni puerto abierto), puerto slsk 53321 (evita colision en Windows), auto-start del tunel al boot leyendo username de config.json."
+}
