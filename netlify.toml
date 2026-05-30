@@ -38,10 +38,18 @@
   status = 200
   force = true
 
-# Agente Windows: el binario vive en la app (no duplicamos 55MB en la landing).
-# La URL pública djfreeapp.ar/GrooveSyncAgent.exe redirige al binario real.
+# Agente Windows: redirigimos a la latest release de GitHub. Asi cada vez
+# que pusheamos un tag nuevo (v2.x.0) el download publico apunta solo a la
+# version mas nueva — no hay que re-subir el binario al hosting.
 [[redirects]]
   from = "/GrooveSyncAgent.exe"
-  to = "https://app.djfreeapp.ar/GrooveSyncAgent.exe"
+  to = "https://github.com/arenazl/slsk-agent/releases/latest/download/GrooveSyncAgent.exe"
+  status = 302
+  force = true
+
+# Agente macOS: idem para el zip.
+[[redirects]]
+  from = "/GrooveSyncAgent-macOS.zip"
+  to = "https://github.com/arenazl/slsk-agent/releases/latest/download/GrooveSyncAgent-macOS.zip"
   status = 302
   force = true
