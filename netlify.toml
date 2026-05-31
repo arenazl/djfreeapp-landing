@@ -10,6 +10,14 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "interest-cohort=()"
 
+# Permitir CORS para que la app lea la versión del agente
+[[headers]]
+  for = "/agent/version.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET"
+    Access-Control-Allow-Headers = "Content-Type"
+
 # Cache largo para assets estáticos.
 [[headers]]
   for = "/images/*"
