@@ -2,7 +2,7 @@
 // WhatsApp/Telegram/IG leen estos meta tags y muestran preview con cover, artist y title.
 // El usuario humano (browser) ve un <meta http-equiv="refresh"> que lo manda a la SPA real.
 
-const BACKEND = "https://slsk-backend-7da97b8a965d.herokuapp.com";
+const BACKEND = "https://djfreeapp-api-730989854717.southamerica-east1.run.app";
 const APP = "https://app.djfreeapp.ar";
 
 function esc(s) {

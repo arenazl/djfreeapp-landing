@@ -64,9 +64,16 @@
   status = 302
   force = true
 
-# Agente macOS: idem para el zip.
+# Agente macOS: idem para el dmg (drag-to-Applications).
+[[redirects]]
+  from = "/GrooveSyncAgent-macOS.dmg"
+  to = "https://github.com/arenazl/slsk-agent/releases/latest/download/GrooveSyncAgent-macOS.dmg"
+  status = 302
+  force = true
+
+# Compat: el link viejo (.zip) ahora redirige al .dmg nuevo.
 [[redirects]]
   from = "/GrooveSyncAgent-macOS.zip"
-  to = "https://github.com/arenazl/slsk-agent/releases/latest/download/GrooveSyncAgent-macOS.zip"
+  to = "https://github.com/arenazl/slsk-agent/releases/latest/download/GrooveSyncAgent-macOS.dmg"
   status = 302
   force = true
